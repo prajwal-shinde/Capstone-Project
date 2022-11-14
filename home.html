@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<title>Grocery Store</title>
+	<script type="text/javascript">
+		function navigate(){
+			var element_to_nav = document.getElementById("exp_category");
+			element_to_nav.scrollIntoView();
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="main">
+		<nav class="navbar navbar-expand-lg navbar-light text-light" style="background-color: #FF4500;">
+			<div class="container-fluid">
+				<a class="navbar-brand text-light" href="home.html">Grocery Store</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto mx-5 px-3">
+						<li class="nav-item">
+							<a class="nav-link text-light" aria-current="page" href="home.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="About.html">About us</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Category
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item orange" href="Fresh_Fruits.html">Fresh Fruits</a></li>
+								<li><a class="dropdown-item orange" href="Leafy_Vegetables.html">Leafy Vegetables</a></li>
+								<li><a class="dropdown-item orange" href="BreakFast_Items.html">Breakfast Items</a></li>
+								
+							</ul>
+						</li>
+
+						
+						
+						<a href="checkout.html" type="button" class="btn position-relative text-light"><i class="bi bi-basket2-fill fs-4 mr-3"></i>
+							<span class="position-absolute mt-3 start-100 translate-middle badge rounded-pill bg-danger">
+								0
+								<span class="visually-hidden">unread messages</span>
+							</span>
+						</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-person-fill fs-5"></i>Profile
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item orange" href="Register.html">Register</a></li>
+								<li><a class="dropdown-item orange" href="Login.html">Login</a></li>
+								
+								
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="caption_tag" class="d-flex justify-content-start orange">
+			<h1 class="text-light">Shop online fresh quality veggies</h1>
+
+		</div>
+		<p id="sub_caption" class="text-light d-flex justify-content-start orange">We deliver best quality and 100% fresh fruits and vegetables</p>
+		<div id="caption_button">
+			<button class="btn btn-lg text-light" style="background-color: #FF4500;" onclick="navigate()">Shop Now</button>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="card d-flex justify-content-center mt-3 border-0">
+			<div class="card-body">
+				<div class="row d-flex justify-content-evenly">
+					<div class="col-md-3">
+						<div class="row d-block">
+
+							<i class="bi bi-patch-check-fill fs-1 icon-orange"></i>
+							<h3>Best Quality</h3>
+							<p>We provide best quality products and 100% fresh fruits and veggies.</p>
+
+
+						</div>
+					</div>
+					<div class="col-md-3">
+						<i class="bi bi-bag-check-fill fs-1 icon-orange"></i>
+						<h3>Delivery Ontime</h3>
+						<p>We provide ontime delivery you can place order at comfort of your home.</p>
+					</div>
+					<div class="col-md-3">
+						<i class="bi bi-credit-card-2-back-fill fs-1 icon-orange"></i>
+						<h3>Secure Payment</h3>
+						<p>You can do 100% secure payment and assure best offers.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center align-items-center">
+		<h2>Categories</h2>
+
+	</div>
+	<div class="d-flex justify-content-center align-items-center">
+		<hr  style="border:3px solid black;"; width="120px";/>
+	</div>
+	
+	<div id="exp_category" class="container d-flex justify-content-evenly">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card" style="width: 25rem;">
+					<img src="https://img.freepik.com/free-photo/grapes-strawberries-pineapple-kiwi-apricot-banana-whole-pineapple_23-2147968680.jpg?w=2000" class="card-img-top" alt="Error">
+					<div class="card-body">
+						<h5 class="card-title text-dark">Fresh Fruits</h5>
+						<p>Explore different types of fresh fruits quickly grab them in your basket.
+							<a  href="Fresh_Fruits.html" class="btn text-light" style="background-color:#FF4500;">Explore Category</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card" style="width: 25rem;">
+						<img src="https://www.crossfit.com/wp-content/uploads/2021/07/14105156/GreenVegetables-istock-med-768x432.jpg" class="card-img-top" alt="Error">
+						<div class="card-body">
+							<h5 class="card-title">Leafy Vegetables</h5>
+							<p class="card-text">Buy the fresh leafy vegetables here and explore them take the best you needs.</p>
+							<a  href="Leafy_Vegetables.html" class="btn text-light" style="background-color:#FF4500;">Explore Category</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card" style="width: 25rem;">
+						<img src="https://m.media-amazon.com/images/I/61Cr6FRIGQL._SX522_.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Breakfast Items</h5>
+							<p class="card-text">Grab some breakfast snacks and tea time cookies best quality.</p>
+							<a  href="BreakFast_Items.html" class="btn text-light" style="background-color:#FF4500;">Explore Category</a>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-light" style="background-color:#FF4500">
+			<footer class="py-3 my-4 mb-0">
+				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+					<li class="nav-item"><a href="home.html" class="nav-link px-2 text-light">Home</a></li>
+					<li class="nav-item"><a href="About.html" class="nav-link px-2 text-light">About us</a></li>
+					<li class="nav-item"><a href="Fresh_Fruits.html" class="nav-link px-2 text-light">Category</a></li>
+					<li class="nav-item"><a href="Login.html" class="nav-link px-2 text-light">Profile</a></li>
+				</ul>
+				<p class="text-center text-light">© 2022 Atos Syntel Pvt Ltd [Capstone Group C]</p>
+			</footer>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+	</body>
+	</html>
